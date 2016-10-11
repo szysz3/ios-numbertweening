@@ -37,5 +37,11 @@ class ViewController: UIViewController {
         view.setNeedsLayout()
         view.layoutIfNeeded()
     }
+    
+    override var preferredStatusBarStyle: UIStatusBarStyle{
+        get{
+            return UIStatusBarStyle.lightContent
+        }
+    }
 }
 
