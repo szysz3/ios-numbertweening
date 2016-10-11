@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11201" systemVersion="16A323" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11161"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="NumberTweening" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
+                        <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="e6I-hk-hXc">
+                                <subviews>
+                                    <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="bridge-1660417_1920" translatesAutoresizingMaskIntoConstraints="NO" id="eJy-ev-Ad7"/>
+                                    <view alpha="0.5" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="icy-Kk-d6E">
+                                        <color key="backgroundColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
+                                    </view>
+                                </subviews>
+                                <color key="backgroundColor" white="0.85948350694444442" alpha="1" colorSpace="calibratedWhite"/>
+                                <constraints>
+                                    <constraint firstItem="icy-Kk-d6E" firstAttribute="top" secondItem="e6I-hk-hXc" secondAttribute="top" id="8Mt-H1-g82"/>
+                                    <constraint firstItem="eJy-ev-Ad7" firstAttribute="top" secondItem="e6I-hk-hXc" secondAttribute="top" id="AJJ-Jh-ZOo"/>
+                                    <constraint firstAttribute="bottom" secondItem="eJy-ev-Ad7" secondAttribute="bottom" id="Fsm-Wi-yU7"/>
+                                    <constraint firstAttribute="bottom" secondItem="icy-Kk-d6E" secondAttribute="bottom" id="LQz-zi-rXO"/>
+                                    <constraint firstItem="eJy-ev-Ad7" firstAttribute="leading" secondItem="e6I-hk-hXc" secondAttribute="leading" id="MTI-ra-n1o"/>
+                                    <constraint firstItem="icy-Kk-d6E" firstAttribute="leading" secondItem="e6I-hk-hXc" secondAttribute="leading" id="RiB-6D-9pu"/>
+                                    <constraint firstAttribute="trailing" secondItem="eJy-ev-Ad7" secondAttribute="trailing" id="Xxx-l5-A4L"/>
+                                    <constraint firstAttribute="trailing" secondItem="icy-Kk-d6E" secondAttribute="trailing" id="eIA-XH-Whk"/>
+                                </constraints>
+                            </view>
+                            <button opaque="NO" alpha="0.80000000000000004" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Wea-D3-Emo">
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="30" id="UEj-zy-HHM"/>
+                                    <constraint firstAttribute="width" constant="200" id="UzZ-Bg-Vg0"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" weight="ultraLight" pointSize="55"/>
+                                <state key="normal" title="+">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="onIncreaseTouched:" destination="BYZ-38-t0r" eventType="touchUpInside" id="In2-sp-RmD"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="Wea-D3-Emo" secondAttribute="bottom" constant="37" id="3WE-Oe-lrg"/>
+                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="e6I-hk-hXc" secondAttribute="bottom" id="fWd-sD-fWy"/>
+                            <constraint firstAttribute="trailing" secondItem="e6I-hk-hXc" secondAttribute="trailing" id="gXM-C5-z7L"/>
+                            <constraint firstItem="e6I-hk-hXc" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="xHB-J5-CXu"/>
+                            <constraint firstItem="Wea-D3-Emo" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="yuQ-th-mcO"/>
+                            <constraint firstItem="e6I-hk-hXc" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" id="zoH-sy-MIK"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="mainContainer" destination="e6I-hk-hXc" id="2E6-ye-Osv"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="bridge-1660417_1920" width="1920" height="1458"/>
+    </resources>
+</document>
